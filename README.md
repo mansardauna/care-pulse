@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# CarePulse - Patient Management System (Frontend Assessment)
 
-## Project info
+This project is a frontend implementation of a Patient Management System admin dashboard, built as a coding assessment for a Frontend Developer position at EverTry.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The task was to recreate the **Login** and **Dashboard** screens from the provided Figma design using React.js, with the following requirements:
+- Simple login form that redirects to the Dashboard on submission.
+- Dashboard layout closely matching the Figma design.
+- An "Add to schedule" button with a simple todo-style list allowing users to add and remove schedule items.
 
-## How can I edit this code?
+## Live Demo
+https://care-pulse-mu-steel.vercel.app/
 
-There are several ways of editing your application.
+## GitHub Repository
+https://github.com/mansardauna/care-pulse
 
-**Use Lovable**
+## Tech Stack
+- **React** with TypeScript
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **shadcn/ui** - Reusable, accessible UI components built on Radix UI and Tailwind CSS
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Features Implemented
+### Login Page
+- Clean, responsive login form.
+- Basic form validation (client-side).
+- On "Login" button click, redirects to the protected Dashboard page.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Dashboard Page
+- Admin sidebar navigation.
+- Patient overview cards and statistics.
+- Patient appointment table with status badges.
+- Patient avatars using initials (first letter of first and last name) with consistent random background colors.
+- "Add to schedule" functionality:
+  - Input field and button to add new schedule items.
+  - List of added items with remove option.
+- Responsive layout matching the Figma design as closely as possible.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+```
+src/
+├── components/     # Reusable UI components (shadcn/ui based)
+├── pages/          # Login and Dashboard pages
+├── App.tsx         # Main routing and layout
+├── main.tsx        # Entry point
+├── index.css       # Global styles and Tailwind setup
+└── ...
 ```
 
-**Edit a file directly in GitHub**
+## Setup & Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mansardauna/care-pulse.git
+   cd care-pulse
+   ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   bun install  # (bun.lockb file included)
+   ```
 
-**Use GitHub Codespaces**
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   bun run dev
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+4. Open http://localhost:5173 (or the provided Vite URL) in your browser.
 
-## What technologies are used for this project?
+## Build & Deployment
+- Build for production:
+  ```bash
+  npm run build
+  ```
+- The project is deployed on Vercel for easy preview.
 
-This project is built with:
+This project demonstrates clean React component structure, TypeScript usage, Tailwind styling, and attention to UI details from the Figma design.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Thank you for the opportunity!  
+ABDULRAHMAN
