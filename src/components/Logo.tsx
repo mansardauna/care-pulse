@@ -9,7 +9,7 @@ interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-2 group ${className}`}>
-      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/30">
+      <div className="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/30">
         <img
             src={logoMark}
             alt="Healthcare professionals"
